@@ -1,0 +1,7 @@
+matches:
+  - trigger: ":rockyou"
+    replace: "/usr/share/wordlists/rockyou.txt"
+
+
+  - trigger: ":secl"
+    replace: "/usr/share/SecLists/"

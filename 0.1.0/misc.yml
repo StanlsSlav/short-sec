@@ -1,0 +1,19 @@
+matches:
+  - trigger: ":c"
+    replace: "clear"
+
+
+  - trigger: ":stty"
+    replace: "stty raw -echo; fg"
+
+
+  - trigger: ":ehosts"
+    replace: "sudo $EDITOR /etc/hosts"
+
+
+  - trigger: ":search\\((?P<package>.*)\\)"
+    replace: "apt search {{package}}$|$ | grep '{{package}}'"
+
+
+  - trigger: ":pty"
+    replace: "python3 -c \"import pty; pty.spawn('/bin/bash')\""

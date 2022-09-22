@@ -1,0 +1,7 @@
+author: StanlsSlav
+description: Common aliases for shell, wordlists and more into SSH connections that might lack them.
+name: short-sec
+title: ShortSec
+version: 0.1.0
+homepage: "https://github.com/StanlsSlav/espanso-short-sec"
+tags: ["alias", "shell", "penetration", "hacking", "tools", "misc"]
