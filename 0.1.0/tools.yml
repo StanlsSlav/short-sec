@@ -1,1 +1,21 @@
 matches:
+  - trigger: ":cyberchef"
+    replace: "firefox /opt/CyberChef/CyberChef_v*.html"
+
+  - trigger: ":rustscan"
+    replace: "docker run -it --rm rustscan/rustscan"
+
+  - trigger: ":ciphey"
+    replace: "docker run -it --rm --name ciphey remnux/ciphey"
+
+  - trigger: ":stegseek"
+    replace: "docker run --rm -it -v "$(pwd):/steg" --name stegseek rickdejager/stegseek"
+
+  - trigger: ":afl"
+    replace: "docker run -ti -v $(pwd):/src aflplusplus/aflplusplus"
+
+  - trigger: ":neo4j"
+    replace: "docker run -d -p7474:7474 -p7687:7687 -e NEO4J_AUTH=neo4j/s3cr3t neo4j"
+
+  - trigger: ":revshell"
+    replace: "docker run -d -p 1337:80 reverse_shell_generator"
