@@ -1,8 +1,4 @@
 matches:
-  - regex: ":\\((?P<perm>\\d{3,4})\\)"
-    replace: "find / -perm -{{perm}} $|$ 2>/dev/null"
-
-
   # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/common-aliases/common-aliases.plugin.zsh
   - trigger: ":aliases"
     replace: |
@@ -55,6 +51,5 @@ matches:
       alias sortnr='sort -n -r'
       alias unexport='unset'
 
-      alias rm='rm -i'
       alias cp='cp -i'
       alias mv='mv -i'

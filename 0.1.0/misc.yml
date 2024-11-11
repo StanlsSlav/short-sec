@@ -7,6 +7,10 @@ matches:
     replace: "stty raw -echo; fg"
 
 
+  - trigger: ":psf"
+    replace: "ps faux"
+
+
   - trigger: ":ehosts"
     replace: "sudo $EDITOR /etc/hosts"
 
